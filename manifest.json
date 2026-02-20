@@ -6,13 +6,13 @@
     "description": "A pomodoro timer and quotes from the developer to keep you locked in.",
 
     "icons": {
-        "48": "placeholder"
+        "48": "icons/border-48.png"
     },
 
     "content_scripts": [
         {
-            "matches": ["<all_urls>"],
-            "js": ["content.js"]
+            "matches": ["*://*.mozilla.org/*"],
+            "js": ["./content.js"]
         }
     ]
 }
